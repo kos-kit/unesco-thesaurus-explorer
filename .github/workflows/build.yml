@@ -15,7 +15,7 @@ jobs:
         id: configure_pages
       - uses: kos-kit/explorer@v1-beta
         with:
-          data_paths: unesco-thesaurus.nt
+          data_paths: /github/workspace/unesco-thesaurus.nt
           next_base_path: ${{ steps.configure_pages.outputs.base_path }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
