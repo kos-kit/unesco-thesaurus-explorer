@@ -16,6 +16,7 @@ jobs:
       - uses: kos-kit/explorer@v1-beta
         with:
           data_paths: /github/workspace/data.rdf
+          language_tags: en,fr,es,ru,ar
           next_base_path: ${{ steps.configure_pages.outputs.base_path }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
